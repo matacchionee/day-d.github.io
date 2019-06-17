@@ -73,7 +73,7 @@ Ils faut copier les scripts à la fin de votre code, juste avant la fermeture de
 ```
 
 Une fois ces deux bouts de code collés, on peut commencer à utiliser bootstrap.
-### Exemple 1 la carte (l.142-149, 151-158, 160-167)
+### Exemple 1 : La carte (l.142-149, 151-158, 160-167)
 ```html
       <div class="card" style="width: 18rem;">
         <img src="images/muffin1.jpg" class="card-img-top" alt="images/muffin1.jpg">
@@ -85,12 +85,19 @@ Une fois ces deux bouts de code collés, on peut commencer à utiliser bootstrap
       </div>
 ```
 
-### Exemple 2 le bouton (l.147, 156, 165)
+Nous avons créer 3 cartes produits que nous avons aligné horizontalement grace à des classes flexbox également fournies par bootstrap, lignes 141-168.
+```html
+<div class="d-flex justify-content-between">
+...
+</div>
+```   
+      
+### Exemple 2 : Le bouton (l.147, 156, 165)
 ```html
 <a href="#" class="btn btn-success">Plus d'infos ici</a>
 ```
 
-### Exemple 2 la modale (l.29-57)
+### Exemple 3 : La modale (l.29-57)
 
 ```html
       <!-- Button trigger modal -->
