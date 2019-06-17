@@ -51,9 +51,81 @@ En suite, on choisi un icone. une fois l'icone choisi, on récupère le code d'i
 
 ## <a href="https://getbootstrap.com/" target="_blanck">Bootstrap</a>
 
+<a href="https://getbootstrap.com/" target="_blanck">Bootstrap</a> est un service proposé par twitter qui permet de récupérer une feuille CSS et une feuille de JS qui contiennent un grand nombre de classes et de fonctions. Cela nous permet donc de ne pas avoir à réécrir du style et du JS.
+
 Vous trouverez ici les imprim-écrans des différentes étapes à suivre pour intégrer ce service :
 
-<a href="https://docs.google.com/presentation/d/e/2PACX-1vR_nPGm05oNGHC-bbJDOYtubMDld9FiunNOBVQR0h_i4oE8uU_vCAXtOrcuxze172Mc9e7l3xeTnjUm/pub?start=false&loop=false&delayms=60000" target="_blanck">Bootstrap demo</a>
+<a href="https://docs.google.com/presentation/d/e/2PACX-1vRN32BRSc27tVZ5qZtwkxMuMkMY6ynF-PUHDHsRyFiaIMvy0yDlmSpYYOakTcNr_-7pTBX5acufW6ly/pub?start=false&loop=false&delayms=60000" target="_blanck">Bootstrap demo</a>
 
-Une fois le code d'intégration récupérer, il doit être collé là où l'on souhaite voir apparaitre le service. 
+Dans l'onglet "Getting Strated" ont trouve deux bout de codes à copier dans notre fichier index.html.
+### Le lien CSS (l.7)
+Il faut le copier dans le head avant le lien vers votre propre feuille de style (style.css). Attention si cette ligne est copiée après votre feuille de style, cela peut casser votre mise en page actuelle.
+```html
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+```
+
+### Les scripts JS (l.180-182)
+Ils faut copier les scripts à la fin de votre code, juste avant la fermeture de la balise </body>
+```html
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+```
+
+Une fois ces deux bouts de code collés, on peut commencer à utiliser bootstrap.
+### Exemple 1 la carte (l.142-149, 151-158, 160-167)
+```html
+      <div class="card" style="width: 18rem;">
+        <img src="images/muffin1.jpg" class="card-img-top" alt="images/muffin1.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Muffin chocolat</h5>
+          <p class="card-text">Les muffins au chocolat sont super bons.<br>Essayez les!</p>
+          <a href="#" class="btn btn-success">Plus d'infos ici</a>
+        </div>
+      </div>
+```
+
+### Exemple 2 le bouton (l.147, 156, 165)
+```html
+<a href="#" class="btn btn-success">Plus d'infos ici</a>
+```
+
+### Exemple 2 la modale (l.29-57)
+
+```html
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+        Contact
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h3 class="color-green">MihiVai</h3>
+              <p>contact@mihivai.com</p>
+              <div>
+                <a class="socials" href="">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a class="socials" href="">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a class="socials" href="">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+```
 
