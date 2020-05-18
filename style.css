@@ -1,84 +1,92 @@
-body {
-  background: #ee9ca7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: arial;
-  margin: 0px;
-}
-
-h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 32px;
-}
-
-h2, h3, h4 {
-  font-family: 'Pacifico', cursive;
-  font-size: 28px;
-}
-
-a, a:hover {
-  text-decoration: none;
-}
-
-p, ul, ol {
-  font-size: 20px;
-}
-
-.cadre {
-  background: #E2F3DC;
-  border: 3px solid #C1E6B6;
-  margin: 20px 100px;
-  padding: 30px 70px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px grey;
-}
-
-.avatar {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 5px 5px 10px grey;
+body{
+	font-family: arial;
+	background: lightpink;
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
+}
+h1 {
+	color: orange;
+	font-size: 40px;
+}
+h2, h3, h4 {
+	font-size: 40px;
+}
+
+.color-pink {
+	color: #ffacb7;
+
+}
+ul, ol, h4, h5{
+	text-align: left;
 }
 
 .text-left {
-  text-align: left;
-}
+	text-align: left;
 
-.color-green {
-  color: #458D2E;
 }
-
+.img1 {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+.cadre { 
+  background: lightblue; 
+  border: 5px solid lightgreen ;
+  margin: 100px;
+  padding: 25px;
+  border-radius: 30px
+  box-shadow: 10px 10px 10px grey;
+  }
+.productions {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+}
 .btn-pink {
-  display: inline-block;
-  color: white;
-  background: #C86472;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 5px;
-  font-weight: bold;
+	display: inline-block;
+	background: lightpink;
+	padding: 15px;
+	margin: 15px;
+	border: 2px solid pink;
+	border-radius: 3px;
+	color: white;
+	font-weight: bold;
 }
 
 .btn-pink:hover {
-  color: white;
-  opacity: 0.8;
+background: red;
 }
 
-
-.logo {
-  height: 60px;
-  margin: 5px;
+.line-transparent {
+	background: black;
+	color:white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
+.line-dark{
+	background: purple;
+	width: 50% ;
+	height: 10px;
+}
+.line-medium {
+	background: red;
+	width: 30% ;
+	height: 10px;
+}
+.line-light {
+	background:  orange;
+	width: 20%;
+	height: 10px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #E2F3DC;
+  background: lightblue;
 }
 
 .links {
@@ -95,65 +103,11 @@ p, ul, ol {
   color: #458D2E;
 }
 
-
-.line-transparent {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.display-flex {
+	display: flex;
+	justify-content: center;
 }
 
-.line-light {
-  height: 5px;
-  width: 20%;
-  background: #EE9CA7;
+.margin-100px {
+	margin: 100px;
 }
-
-.line-medium {
-  height: 5px;
-  width: 30%;
-  background: #C86472;
-}
-
-.line-hard {
-  height: 5px;
-  width: 50%;
-  background: #9F3442;
-}
-
-
-.horizontal-position {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 100px;
-}
-
-.cadre-preparartion {
-  background: #E2F3DC;
-  border: 3px solid #C1E6B6;
-  margin: 0px 0px 0px 10px;
-  padding: 30px 70px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px grey;
-}
-
-.cadre-ingredients {
-  background: #E2F3DC;
-  border: 3px solid #C1E6B6;
-  margin: 0px 10px 0px 0px;
-  padding: 30px 70px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px grey;
-  width: 1000px;
-}
-
-.card-img-top {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.socials {
-  font-size: 40px;
-  color: green;
-}
-
